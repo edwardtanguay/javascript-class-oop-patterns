@@ -28,7 +28,6 @@ class Employees {
 	list() {
 		return this.employees.map(m => `${m.firstName} ${m.lastName} (${m.id})`);
 	}
-
 }
 
 const employees = new Employees();
