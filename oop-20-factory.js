@@ -38,9 +38,6 @@ class PersonFactory {
 	}
 
 	instantiate(kind, obj) {
-		console.log(obj);
-		console.log(obj.firstName);
-		console.log(obj.firstName ?? 'ok');
 		switch (kind) {
 			case 'employee':
 				const employee = new Employee(obj.firstName ?? '(unknown)', obj.lastName ?? '(unknown)', obj.employeeNumber ?? '(unknown)');
