@@ -1,15 +1,3 @@
-// const fetch = () => {
-// 	return new Promise((resolve) => {
-// 		setTimeout(() => {
-// 			resolve([
-// 				{ firstName: 'Arthur', lastName: 'Pym', employeeID: 1 },
-// 				{ firstName: 'August', lastName: 'Barnard', employeeID: 2 },
-// 				{ firstName: 'M.', lastName: 'Poe', employeeID: 3 }
-// 			]);
-// 		}, 2000);
-// 	});
-// }
-
 const fetch = () => {
      return new Promise((resolve) => {
          setTimeout(() => {
