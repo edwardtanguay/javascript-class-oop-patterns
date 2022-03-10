@@ -1,15 +1,15 @@
 const fetch = () => {
-     return new Promise((resolve) => {
-         setTimeout(() => {
-             resolve({
-                 json: () => new Promise((r) => r([
-                        {firstName: 'Arthur', lastName: 'Pym', employeeID: 1},
-                        {firstName: 'August', lastName: 'Barnard', employeeID: 2},
-                        {firstName: 'Mildred', lastName: 'Poe', employeeID: 3}
-                 ]))
-             });
-         }, 3000);
-     });
+	return new Promise((resolve) => {
+		setTimeout(() => {
+			resolve({
+				json: () => new Promise((r) => r([
+					{ firstName: 'Arthur', lastName: 'Pym', employeeID: 1 },
+					{ firstName: 'August', lastName: 'Barnard', employeeID: 2 },
+					{ firstName: 'Mildred', lastName: 'Poe', employeeID: 3 }
+				]))
+			});
+		}, 3000);
+	});
 }
 
 class Employees {
