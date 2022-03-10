@@ -2,10 +2,10 @@ import fetch from 'node-fetch';
 
 class Employees {
 	constructor() {
-		// if (Employees._instance) {
-		// 	return Employees._instance
-		// }
-		// Employees._instance = this;
+		if (Employees._instance) {
+			return Employees._instance
+		}
+		Employees._instance = this;
 
 		this.emulatedWaitTimeInSeconds = 2;
 		this.employees = [];
@@ -14,10 +14,10 @@ class Employees {
 		this.url = 'https://raw.githubusercontent.com/graphql-compose/graphql-compose-examples/master/examples/northwind/data/json/employees.json';
 
 		this.initPromise = (async () => {
-			const response = await fetch(this.url);
-			this.employees = await response.json();
-			this.dataLoaded = true;
-			console.log(`work done: got ${this.employees.length} employees`);
+				const response = await fetch(this.url);
+				this.employees = await response.json();
+				this.dataLoaded = true;
+				console.log(`work done: got ${this.employees.length} employees`);
 		})();
 	}
 
